@@ -1,2 +1,2 @@
 # Svelte-starter-kit
- A starer kit for Svelte based front-ends
+ A starter kit for Svelte based front-ends

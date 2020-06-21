@@ -31,6 +31,16 @@
 
 <style lang="sass">
 
+  \:global(body)
+    margin: 0
+    font-family: 'Avenir', Helvetica, Arial, sans-serif
 
+  \:global(::selection)
+    background: #ff0000
+    color: #fff
+
+  \:global(::-moz-selection)
+    background: #ff0000
+    color: #fff
 
 </style>

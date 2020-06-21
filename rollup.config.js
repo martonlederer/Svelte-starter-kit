@@ -4,6 +4,7 @@ import resolve from '@rollup/plugin-node-resolve'
 import commonjs from '@rollup/plugin-commonjs'
 import livereload from 'rollup-plugin-livereload'
 import { terser } from 'rollup-plugin-terser'
+import { join } from 'path'
 
 const production = !process.env.ROLLUP_WATCH
 
@@ -27,7 +28,7 @@ export default {
 			//adding preprocessors
 			preprocess: [
 
-				sass({  })
+				sass({ data: `@import "${ join(__dirname, 'src/sass/_variables.sass') }"` })
 
 			],
 			// we'll extract any component CSS out into

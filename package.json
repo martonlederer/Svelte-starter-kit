@@ -15,10 +15,10 @@
     "rollup-plugin-svelte": "^5.0.3",
     "rollup-plugin-terser": "^5.1.2",
     "svelte": "^3.0.0",
-    "svelte-preprocess": "^3.9.9",
-    "svelte-router-spa": "^5.7.1"
+    "svelte-preprocess": "^3.9.9"
   },
   "dependencies": {
+    "page": "^1.11.6",
     "sirv-cli": "^0.4.4"
   }
 }

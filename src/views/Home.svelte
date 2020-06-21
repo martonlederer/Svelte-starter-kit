@@ -5,8 +5,9 @@
 </script>
 
 <h1>{ test }</h1>
+<a href="/test/iddd">Test</a>
 
-<style type="text/sass">
+<style lang="sass">
 
   h1
     font-size: 1.1em

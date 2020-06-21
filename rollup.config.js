@@ -93,10 +93,9 @@ function serve() {
 					stdio: ['ignore', 'inherit', 'inherit'],
 					shell: true
 
-				});
+				})
 
 			}
-
 
 		}
 

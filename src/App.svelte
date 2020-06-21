@@ -31,16 +31,18 @@
 
 <style lang="sass">
 
+  @import './sass/_variables.sass'
+
   \:global(body)
     margin: 0
     font-family: 'Avenir', Helvetica, Arial, sans-serif
 
   \:global(::selection)
-    background: #ff0000
+    background: $primary-color
     color: #fff
 
   \:global(::-moz-selection)
-    background: #ff0000
+    background: $primary-color
     color: #fff
 
 </style>

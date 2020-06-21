@@ -28,15 +28,21 @@
 
   }
 
+  function removeTask (taskID) {
+
+    exampleList = exampleList.filter(item => exampleList.indexOf(item) !== taskID)
+
+  }
+
 </script>
 
 <h1>Test {params.id}</h1>
 
 <h2>Tasks for today</h2>
 
-{#each exampleList as { task, name }}
+{#each exampleList as { task, name }, id}
 
-  <p><b>{name}</b> has to <b>{task}</b>...</p>
+  <p><b>{name}</b> has to <b>{task}</b>... <button on:click={() => removeTask(id)}>X</button></p>
 
 {/each}
 

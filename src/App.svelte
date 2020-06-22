@@ -30,9 +30,7 @@
 </div>
 
 <style lang="sass">
-
-  @import './sass/_variables.sass'
-
+  
   \:global(body)
     margin: 0
     font-family: 'Avenir', Helvetica, Arial, sans-serif

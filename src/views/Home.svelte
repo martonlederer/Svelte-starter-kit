@@ -27,5 +27,6 @@
 
   h1
     font-size: 1.1em
+    color: $primary-color
 
 </style>

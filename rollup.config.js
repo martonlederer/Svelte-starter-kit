@@ -28,7 +28,11 @@ export default {
 			//adding preprocessors
 			preprocess: [
 
-				sass({ data: `@import "${ join(__dirname, 'src/sass/_variables.sass') }"` })
+				sass({
+
+					data: `@import '${ join(process.cwd(), 'src/sass/_variables.sass') }'`
+
+				})
 
 			],
 			// we'll extract any component CSS out into

@@ -49,3 +49,10 @@
 <input type="text" placeholder="What task to do?" bind:value={addTask.task}>
 <input type="text" placeholder="Who is the lucky one to do it?" bind:value={addTask.name}>
 <button on:click={addTaskToList}>Add task!</button>
+
+<style lang="sass">
+
+  h1
+    color: $primary-color
+
+</style>

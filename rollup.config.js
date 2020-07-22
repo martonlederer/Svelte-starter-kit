@@ -1,7 +1,8 @@
 import svelte from 'rollup-plugin-svelte'
-import { sass } from 'svelte-preprocess'
+import { sass, typescript as typescriptprocess } from 'svelte-preprocess'
 import resolve from '@rollup/plugin-node-resolve'
 import commonjs from '@rollup/plugin-commonjs'
+import typescript from '@rollup/plugin-typescript'
 import livereload from 'rollup-plugin-livereload'
 import { terser } from 'rollup-plugin-terser'
 import { join } from 'path'
@@ -39,11 +40,13 @@ export default {
 
 					data: `@import '${ join(process.cwd(), 'src/sass/_variables.sass') }'`
 
-				})
+				}),
+				typescriptprocess()
 
 			]
 
 		}),
+		typescript({ sourceMap: !production }),
 
 		// If you have external dependencies installed from
 		// npm, you'll most likely need these plugins. In

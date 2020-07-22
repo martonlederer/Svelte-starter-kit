@@ -1,6 +1,6 @@
 <script>
 
-  import { test } from '../store/stores.js'
+  import { test } from '../store/stores.ts'
   import { fly, fade } from 'svelte/transition'
 
   let welcome = 'Welcome to this example *Svelte* app. This is the Homepage'
